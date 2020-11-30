@@ -22,27 +22,17 @@
   z-index: 1;
 }
 
-.header__logo{
+.logo_place_header{
   position: absolute;
   top: 30px;
   left: 64px;
 }
 
-.logo__link{
-  text-decoration: none;
-  color: #000;
-  font-size: 18px;
-  font-weight: 400;
-  transition: 1s;
+.logo__links{
+  width: 182px;
+  height: 32px;
 }
 
-.logo__link-yandex:hover{
-  color: #ff0000;
-}
-
-.logo__link-praktikum:hover{
-  color: #2f80ed;
-}
 
 .header__title{
   width: 730px;
@@ -358,12 +348,6 @@
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  
-}
-
-.logo__link-dark{
-  font-size: 20px;
-  color: #f2f2f2;
   
 }
 
