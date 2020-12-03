@@ -318,7 +318,6 @@
 .social__column-links{
   display: flex;
   flex-direction: column;
-  list-style-type: none;
   padding: 20px 0 16px 0px;
   margin: 0;
 }
@@ -351,5 +350,5 @@
 }
 
 .footer__social-icon:hover{
-  opacity: 0.1;
+  opacity: 0.3;
 }
