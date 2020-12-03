@@ -9,18 +9,18 @@
 </head>
 <body>
 <div class="page">
-  <header class="header"> 
+  <header class="header" id="header"> 
       <img src="./images/logo_place_header.svg" alt="Яндекс Практикум" class="logo logo_place_header">
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению
-        вы можете использовать в своей жизни? <a href="#teach-kaufman" class="header__link hover_link">Узнать &#8594; </a>
+        вы можете использовать в своей жизни? <a href="#teach-kaufman" class="header__link">Узнать &#8594; </a>
       </p>
       <img src="./images/header-image.png" alt="Учиться?" class="header__main-illustration">
     <div class="header__square-pic"></div>
   </header>
   
   <main class="content">
-    <section class="description">
+    <section class="description" id="description">
       <!-- Вроде тут правильно вложил, но валидатор ругается на этот элемент, хотя у него дочерний h2 -->
       <article class="two-columns">
         <h2 class="two-columns__brief">
@@ -51,37 +51,37 @@
           Про учебу и мозг
       </h3>
       <div class="table">
-        <div class="table__cell table__cell_theme_white">
+        <div class="table__cell">
           <h4 class="table__heading">86 миллиардов</h4>
           <p class="table__text">Число нейронов в мозге человека</p>
         </div>
-        <div class="table__cell table__cell_theme_white">
+        <div class="table__cell">
           <h4 class="table__heading">2,1 миллиарда</h4>
           <p class="table__text">Число нуждающихся в повышении квалификации</p>
           <p class="table__text">Всемирный банк, 2017</p>
         </div>
-        <div class="table__cell table__cell_theme_white">
+        <div class="table__cell">
           <h4 class="table__heading">1000 терабайт</h4>
           <p class="table__text">Объем памяти человека</p>
         </div>
-        <div class="table__cell table__cell_theme_white">
+        <div class="table__cell">
           <h4 class="table__heading">500 триллионов</h4>
           <p class="table__text">Число ответственных за обучение нервных синапсов у взрослого человека</p>
         </div>
-        <div class="table__cell table__cell_theme_white">
+        <div class="table__cell">
           <h4 class="table__heading">420 миллионов</h4>
           <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
           <p class="table__text">Всемирный банк, 2017</p>
         </div>  
-        <div class="table__cell table__cell_theme_white">
+        <div class="table__cell">
           <h4 class="table__heading">17-20 лет</h4>
           <p class="table__text">Пик обучаемости</p>
         </div>     
-        <div class="table__cell table__cell_theme_white">
+        <div class="table__cell">
           <h4 class="table__heading">1885 год</h4>
           <p class="table__text">Открытие кривой забывания</p>
         </div>   
-        <div class="table__cell table__cell_theme_white">
+        <div class="table__cell">
           <h4 class="table__heading">1889 год</h4>
           <p class="table__text">Открытие условного рефлекса</p>
         </div>
@@ -95,7 +95,7 @@
       <h3 class="feynman__subtitle">
         Выучить и не забыть.
       </h3>
-      <a href="https://lifehacker.ru/metod-fejnmana/" class="feyman__link hover_link">Подробнее &#8594;</a>
+      <a href="https://lifehacker.ru/metod-fejnmana/" class="feyman__link">Подробнее &#8594;</a>
       <!-- Так и не понял как ставить и на фон феймана и серый цвет :() -->
       <img src="./images/feynman.png" alt="Фейман" class="feynman__background">
     </section>
@@ -155,31 +155,37 @@
 
   <footer class="footer">
     <div class="footer__columns">
-      <div class="footer__column_content_copyright">
+      <div class="footer__column footer__column_content_copyright">
         <img src="./images/logo_place_footer.svg" alt="Яндекс Практикум" class="logo logo_place_footer">
         <p class="footer__author">
           &copy;2020. Сергей Ивонтьев
         </p>
       </div>
-      <div class="footer__column_content_info">
+      <div class="footer__column footer__column_content_info">
         <h3 class="footer__column-heading">
           О практикуме
         </h3>
-        <div class="info__column-links">
-            <a href="#" class="footer__column-link">Главная</a>
-            <a href="#" class="footer__column-link">Концепция</a>
-            <a href="#" class="footer__column-link">Наставники</a>
-        </div>
+        <nav class="info__column-links">
+          <!-- Наставник разрещил добавить доп класс, что бы соотвествовать логике nav>ul>li -->
+          <ul class="footer__list">
+            <li><a href="#header" class="footer__column-link">Главная</a></li>
+            <li><a href="#description" class="footer__column-link">Концепция</a></li>
+            <li><a href="#" class="footer__column-link">Наставники</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="footer__column_content_social">
+      <div class="footer__column footer__column_content_social">
         <h3 class="footer__column-heading">
           Соцсети
         </h3>
-        <div class="social__column-links">
-            <a href="#" class="footer__column-link"><img src="./images/facebook_color_white.svg" alt="Фейсбук" class="footer__social-icon">Facebook</a>
-            <a href="#" class="footer__column-link"><img src="./images/vk_color_white.svg" alt="Вк" class="footer__social-icon">Вконтакте</a>
-            <a href="#" class="footer__column-link"><img src="./images/instagram_color_white.svg" alt="Инстаграм" class="footer__social-icon">Instagram</a>
-        </div>
+        <nav class="social__column-links">
+          <!-- Наставник разрещил добавить доп класс, что бы соотвествовать логике nav>ul>li -->
+          <ul class="footer__list">
+            <li><a href="https://www.facebook.com/yandex.praktikum/" class="footer__column-link"><img src="./images/facebook_color_white.svg" alt="Фейсбук" class="footer__social-icon">Facebook</a></li>
+            <li><a href="https://vk.com/yandex.praktikum" class="footer__column-link"><img src="./images/vk_color_white.svg" alt="Вк" class="footer__social-icon">Вконтакте</a></li>
+            <li><a href="https://www.instagram.com/yndx.praktikum/" class="footer__column-link"><img src="./images/instagram_color_white.svg" alt="Инстаграм" class="footer__social-icon">Instagram</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </footer>

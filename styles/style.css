@@ -55,19 +55,12 @@
 
 .header__link{
   color: #2f80ed;
-}
-
-.hover_link{
   text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size .5s;
+  transition: 1s;
 }
 
-.hover_link:hover{
-  background-size: 100% 2px;
+.header__link:hover{
+  opacity: 0.4;
 }
 
 .header__main-illustration{
@@ -172,7 +165,7 @@
   margin-right: auto;
 }
 
-.table__cell_theme_white{
+.table__cell{
   width: 250px;
   padding-top: 60px;
 }
@@ -196,8 +189,9 @@
 
 .feynman{
   position: relative;
-  height: 790px;
+  min-height: 790px;
   background-color: #f2f2f2;
+  padding-top: 100px;
   z-index: 1;
 }
 
@@ -208,7 +202,6 @@
   line-height: 1.15;
   font-weight: 700;
   margin: 0 auto;
-  padding-top: 100px;
 }
 
 .feynman__subtitle{
@@ -230,6 +223,10 @@
   transition: 1s;
   right: 48px;
   top: 50%;
+}
+
+.feyman__link:hover{
+  opacity: 0.4;
 }
 
 .feynman__background{
@@ -261,7 +258,7 @@
 .kaufman__triangle{
   position: absolute;
   background-image: url(../images/kaufman-triangle.svg);
-  background-position: cover;
+  background-size: cover;
   width: 877px;
   height: 877px;
   top: 0px;
@@ -270,14 +267,15 @@
 }
 
       /* Footer */
-
+/* Я изначально раскоментировал box-sizing в page, думал он будет наследоваться. */
 .footer{
+  display: flex;
   min-height: 350px;
   background-color: #1f1f1f;
   color: #f2f2f2;
   padding-top: 60px;
   padding-bottom: 40px;
-  display: flex;
+  box-sizing: border-box;
 }
 
 .footer__columns{
@@ -316,11 +314,19 @@
   margin: 0;
 }
 
-.info__column-links, .social__column-links{
+.info__column-links, 
+.social__column-links{
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 16px;
+  list-style-type: none;
+  padding: 20px 0 16px 0px;
+  margin: 0;
+}
+
+.footer__list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer__column-link{
