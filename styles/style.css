@@ -239,7 +239,7 @@
   padding-top: 70px;
 }
 
-.feyman__link{
+.feynman__link{
   position: absolute;
   color: #2f80ed;
   text-decoration: none;
@@ -251,7 +251,7 @@
   top: 50%;
 }
 
-.feyman__link:hover{
+.feynman__link:hover{
   opacity: 0.4;
 }
 
