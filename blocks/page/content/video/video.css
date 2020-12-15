@@ -1,5 +1,4 @@
 .video{
-  max-height: 432px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 432px;
+  margin: 100px auto 0;
 }

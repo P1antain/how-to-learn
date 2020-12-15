@@ -187,7 +187,7 @@
       /* Video */
 
 .video{
-  max-height: 432px;
+  height: 432px;
   margin-left: auto;
   margin-right: auto;
 }
