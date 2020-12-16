@@ -18,7 +18,7 @@
 @import url(../blocks/page/content/description/description.css);
 @import url(../blocks/page/content/description/two-columns/two-columns.css);
 @import url(../blocks/page/content/description/two-columns/__brief/two-columns__brief.css);
-@import url(../blocks/page/content/description/two-columns/__main/two-columns__main_text.css);
+@import url(../blocks/page/content/description/two-columns/__main/two-columns__main-text.css);
 @import url(../blocks/page/content/description/two-columns/__main/__paragraph/two-columns__paragraph.css);
 @import url(../blocks/page/content/description/two-columns/__main/__paragraph/__span/two-columns__span-accent.css);
     /* Techniques */
@@ -40,7 +40,7 @@
 @import url(../blocks/page/content/oakley/oakley.css);
 @import url(../blocks/page/content/oakley/two-columns/two-columns.css);
 @import url(../blocks/page/content/oakley/two-columns/__brief/two-columns__brief.css);
-@import url(../blocks/page/content/oakley/two-columns/__main_text/two-columns__main_text.css);
+@import url(../blocks/page/content/oakley/two-columns/__main/two-columns__main-text.css);
 @import url(../blocks/page/content/oakley/two-columns/__main_text/__paragraph/two-columns__paragraph.css);
     /* Feynman */
 @import url(../blocks/page/content/feynman/feynman.css);
