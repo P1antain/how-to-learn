@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/style.css"> -->
   <link rel="stylesheet" href="./pages/index.css">
   <title>Научиться учиться</title>
 </head>
@@ -18,7 +16,7 @@
         вы можете использовать в своей жизни? <a href="#teach-kaufman" class="header__link" target="_self">Узнать &#8594; </a>
       </p>
       <img src="./images/header-image.png" alt="Учиться?" class="header__main-illustration">
-    <div class="header__square-pic"></div>
+    <div class="header__square-pic rotation"></div>
   </header>
   
   <main class="content">
@@ -48,9 +46,9 @@
       <h2 class="section-title">
         Техника обучения
       </h2>
-      <h3 class="section-subtitle">
+      <p class="section-subtitle">
         Пять практик от Барбары Оакли
-      </h3>
+      </p>
       <div class="cards">
         <div class="cards__item">
           <img src="./images/cards-attention.png" alt="Внимание" class="cards__image">
@@ -94,16 +92,12 @@
       <h2 class="section-title">
         Видео на TED
       </h2>
-      <h3 class="section-subtitle">
+      <p class="section-subtitle">
         Для тех, кто любит прокастинировать
-      </h3>
+      </p>
       <div class="video__iframes">
-        <div class="video__iframe">
-          <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="video__iframe">
-          <iframe width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+          <iframe src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__iframe"></iframe>
+          <iframe src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__iframe"></iframe>
       </div>
     </section>
 
@@ -128,11 +122,10 @@
       <h2 class="feynman__title">
         Метод  Фейнмана
       </h2>
-      <h3 class="feynman__subtitle">
+      <p class="feynman__subtitle">
         Выучить и не забыть.
-      </h3>
+      </p>
       <a href="https://lifehacker.ru/metod-fejnmana/" class="feynman__link" target="_blank" rel=“noopener”>Подробнее &#8594;</a>
-      <!-- Так и не понял как ставить и на фон феймана и серый цвет :() -->
       <img src="./images/feynman.png" alt="Фейман" class="feynman__background">
     </section>
 
@@ -140,9 +133,9 @@
       <h2 class="section-title">
           Цифры и факты
       </h2>
-      <h3 class="section-subtitle">
+      <p class="section-subtitle">
           Про учебу и мозг
-      </h3>
+      </p>
       <div class="table">
         <div class="table__cell">
           <h4 class="table__heading">86 миллиардов</h4>
@@ -183,14 +176,15 @@
 
     <section class="khan">
       <article class="khan__container">
-        <h3 class="khan__author">Салман Хан</h3>
-        <h2 class="khan__title">Весь мир — школа</h2>
+        <cite class="khan__author">Салман Хан</cite>
+        <cite class="khan__title">Весь мир — школа</cite>
         <blockquote class="khan__quote">
           Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.
         </blockquote>
         <cite class="khan__quote-author">Джордж Лукас</cite>
         <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
         <div class="khan__book-container">
+          <!-- В брифе картинка выглядт по другому, без object-fit, я его поставил но тогда не сохраняется внешний вид из брифа. -->
           <img src="./images/khan-book.jpg" alt="Книга Салмана Хана: Весь мир - школа" class="khan__book-pic">
           <a href="https://www.ozon.ru/context/detail/id/31700837/" class="khan__buy-link" target="_blank" rel=“noopener”>Купить книгу &#8594;</a>
         </div>
@@ -201,9 +195,9 @@
         <h2 class="section-title section-title_theme_dark">
           Принципы обучения
         </h2>
-        <h3 class="section-subtitle section-subtitle_theme_dark">
+        <p class="section-subtitle section-subtitle_theme_dark">
           от Джоша Кауфмана
-        </h3>
+        </p>
       <div class="table table_theme_dark">
         <div class="table__cell table__cell_theme_dark">
           <h4 class="table__heading table__heading_theme_dark">1</h4>
@@ -246,13 +240,13 @@
           <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
         </div>
     </div>
-    <div class="kaufman__triangle"></div>
+    <div class="kaufman__triangle rotation"></div>
     </section>
 
     <section class="resources">
       <h2 class="section-title">Полезные ресурсы</h2>
-      <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения
-      </h3>
+      <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения
+      </p>
       <div class="resources__logo-zone">
         <a href="https://arzamas.academy/" target="_blank" rel=“noopener”><img src="./images/logo/resources-arzamas.svg" alt="Арзамас" class="resources__logo"></a>
         <a href="https://1-academy.ru/" target="_blank" rel=“noopener”><img src="./images/logo/resources-n1.svg" alt="Н+1" class="resources__logo"></a>
@@ -288,7 +282,6 @@
           Соцсети
         </h3>
         <nav class="footer__column-links">
-          <!-- Наставник разрещил добавить доп класс, что бы соотвествовать логике nav>ul>li -->
           <ul class="footer__list">
             <li><a href="https://www.facebook.com/yandex.praktikum/" class="footer__column-link" target="_blank" rel=“noopener”>
               <img src="./images/facebook_color_white.svg" alt="Фейсбук" class="footer__social-icon">Facebook</a></li>
